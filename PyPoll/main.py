@@ -36,7 +36,7 @@ with open(votescsv_path) as csvfile:
         votes_total.append(list_candidates.count(i))
         #percent is to calculcate the percentage of votes each candidate has won
         #also rounding with format
-        percent = '{:0.5}'.format((list_candidates.count(i)/total)*100)
+        percent = '{:.3f}'.format((list_candidates.count(i)/total)*100)
         votes_percent.append(str(percent) + "%") 
         
         total_winning_votes_count = max(votes_total)
