@@ -12,7 +12,7 @@ profit_losses = []
 monthly_changes = []
 
 #initialize variables
-total = 0
+total = 1
 profit_losses_total = 0
 total_change_of_profits = 0
 #initial_profit = 0
@@ -25,6 +25,7 @@ with open(budget_csv) as csvfile:
     csv_header = next(csvreader)
     first_row = next(csvreader)
     initial_profit = int(first_row[1])
+    profit_losses_total += initial_profit
     #read through each row of data after the header
     for row in csvreader: # now starts at row 3
         #this is to count and add total number of months
@@ -51,7 +52,7 @@ with open(budget_csv) as csvfile:
         total_change_of_profits = total_change_of_profits + change_to_profits_monthly
         initial_profit = final_profit
 
-        average_change = (total_change_of_profits/total)
+        average_change = (total_change_of_profits/(total-1))
         
         #calculate average in a different way
     #def average(numbers):
