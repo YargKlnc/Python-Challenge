@@ -4,7 +4,7 @@ import os
 import csv
 
 # set path for file, looking at one folder up and finding csv file, and also making sure it is os compatible too
-votescsv_path = os.path.join("Resources", "election_data.csv")
+votescsv_path = os.path.join("resources", "election_data.csv")
 
 #lists created to store data
 list_candidates = []
@@ -32,6 +32,7 @@ with open(votescsv_path) as csvfile:
         candidates_who_received_votes.append(i)
         #v is for total number of votes for each candidate who received votes
         #v = list_candidates.total(i)
+        #decided not to use v in percent for a clearer view of percent calculation
         votes_total.append(list_candidates.count(i))
         #percent is to calculcate the percentage of votes each candidate has won
         #also rounding with format

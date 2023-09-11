@@ -30,7 +30,7 @@ with open(budget_csv) as csvfile:
         #this is to count and add total number of months
         #calculate total number of all months (dont touch +-) in the dataset
         #total_months = sum(int(row[1]))
-        #total_months.append(str(row[1]))a different way than below count+1?
+        #total_months.append(str(row[1]))a different way than total+1?
         total = total + 1
         
         #add date, list.
