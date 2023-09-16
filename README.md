@@ -1,4 +1,4 @@
-# python-challenge
+# Python-Challenge
 UofT Data Analytics Bootcamp Assignment 3, Python Challenge by YK 
 
 **PyBank Instructions:** In this Challenge, a Python script created to analyze the financial records of the company by using a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
